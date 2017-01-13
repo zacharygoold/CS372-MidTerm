@@ -1,0 +1,55 @@
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.Graphics;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpression;
+import javax.xml.xpath.XPathExpressionException;
+import javax.xml.xpath.XPathFactory;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+public class Shapes {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		//Create JFrame
+		JFrame frame = new JFrame("XML Step Through");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		HelloComponent label = new HelloComponent();
+		frame.add(label);
+		frame.setSize(300, 300);
+		frame.setVisible(true);
+	}	
+
+class shapeInformation {
+	
+}
+	
+
+	
+	
+
+}
+

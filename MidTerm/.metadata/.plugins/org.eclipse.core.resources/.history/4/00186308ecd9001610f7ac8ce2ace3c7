@@ -1,0 +1,33 @@
+import java.io.*;
+
+public class Reader {
+	
+	String color;
+	int length, width, area, perimeter, radius;
+	
+	public Reader(String c, String l, String w){
+		
+		color = c;
+		length = Integer.parseInt(l);
+		width = Integer.parseInt(w);
+		area = length * width;
+		perimeter = length + length + width + width;
+	}
+	
+	public static void main(String[] args) {
+		try {
+			FileInputStream fstream = new FileInputStream("C:/Users/zgoold17/Desktop/shapes.txt");
+			DataInputStream in = new DataInputStream(fstream);
+			BufferedReader br = new BufferedReader(new InputStreamReader(in));
+			String line;
+			while ((line = br.readLine()) != null){
+				String[] dataString = line.split(" ");
+				Reader reader = new Reader(dataString[0], dataString [1], dataString [2]);
+			}
+		} catch (Exception e){
+			System.out.println("error");
+		}
+
+	}
+
+}

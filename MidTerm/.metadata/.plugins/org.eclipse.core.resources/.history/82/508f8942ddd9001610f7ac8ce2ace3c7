@@ -1,0 +1,96 @@
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import javax.swing.JButton;
+import javax.swing.JComponent;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+
+public class GUI extends JComponent implements MouseMotionListener, MouseListener{
+
+	public static void main(String[] args) {
+		//Create JFrame
+		JFrame frame = new JFrame();
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+	
+	}
+
+Image image1, image2, image3, image4;
+public GUI (Image a, Image b, Image c, Image d){
+	image1 = a;
+	image2 = b;
+	image3 = c;
+	image4 = d;
+	addMouseMotionListener(this);
+	addMouseListener(this);
+}
+	
+public void mousePressed(MouseEvent mouse){
+	
+}
+
+public void mouseClicked(MouseEvent mouse){
+	
+}
+
+public void mouseDragged(MouseEvent mouse){
+	
+}
+
+public void mouseReleased(MouseEvent mouse){
+	
+}
+
+int graphicsX = 400, graphicsY = 500;
+public void paint(Graphics g){
+	Graphics2D gg = (Graphics2D)g;
+	if (){
+		gg.drawImage(image1, graphicsX, graphicsY, this);
+	}
+	else if (){
+		gg.drawImage(image2, graphicsX, graphicsY, this);
+	}
+	else if (){
+		gg.drawImage(image3, graphicsX, graphicsY, this);
+	}
+	else if (){
+		gg.drawImage(image4, graphicsX, graphicsY, this);
+	}
+}
+
+@Override
+public void mouseEntered(MouseEvent arg0) {
+	// TODO Auto-generated method stub
+	
+}
+
+@Override
+public void mouseExited(MouseEvent arg0) {
+	// TODO Auto-generated method stub
+	
+}
+
+@Override
+public void mouseMoved(MouseEvent e) {
+	// TODO Auto-generated method stub
+	
+}
+
+
+
+
+}
